@@ -25,4 +25,10 @@ module.exports = {
     'vue/no-unused-components': 'warn',
     'no-unused-vars': 'off',
   },
+  overrides: [
+    {
+      files: ['tests/**/*.spec.ts'],
+      extends: ['plugin:jest/recommended'],
+    },
+  ],
 };
