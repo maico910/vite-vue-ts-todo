@@ -5,6 +5,15 @@ module.exports = {
     browser: true,
     'vue/setup-compiler-macros': true,
   },
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@', './src'],
+        ],
+      },
+    },
+  },
   extends: [
     'plugin:vue/vue3-recommended',
     '@vue/typescript/recommended',

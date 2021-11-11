@@ -7,6 +7,7 @@ specifiers:
   '@vue/eslint-config-typescript': ^9.0.1
   eslint: ^8.2.0
   eslint-config-airbnb-base: ^15.0.0
+  eslint-import-resolver-alias: ^1.1.2
   eslint-plugin-import: ^2.25.3
   eslint-plugin-vue: ^8.0.3
   typescript: ^4.4.3
@@ -24,6 +25,7 @@ devDependencies:
   '@vue/eslint-config-typescript': 9.0.1_a4352df0697e96c04e94ac6a54eee675
   eslint: 8.2.0
   eslint-config-airbnb-base: 15.0.0_6e04a54c7bcd7530b1a4c2da0aa486b1
+  eslint-import-resolver-alias: 1.1.2_eslint-plugin-import@2.25.3
   eslint-plugin-import: 2.25.3_eslint@8.2.0
   eslint-plugin-vue: 8.0.3_eslint@8.2.0
   typescript: 4.4.4
@@ -569,7 +571,7 @@ packages:
   /debug/3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
     dependencies:
-      ms: 2.1.3
+      ms: 2.1.2
     dev: true
 
   /debug/4.3.2:
@@ -878,6 +880,15 @@ packages:
       object.assign: 4.1.2
       object.entries: 1.1.5
       semver: 6.3.0
+    dev: true
+
+  /eslint-import-resolver-alias/1.1.2_eslint-plugin-import@2.25.3:
+    resolution: {integrity: sha512-WdviM1Eu834zsfjHtcGHtGfcu+F30Od3V7I9Fi57uhBEwPkjDcii7/yW8jAT+gOhn4P/vOxxNAXbFAKsrrc15w==}
+    engines: {node: '>= 4'}
+    peerDependencies:
+      eslint-plugin-import: '>=1.4.0'
+    dependencies:
+      eslint-plugin-import: 2.25.3_eslint@8.2.0
     dev: true
 
   /eslint-import-resolver-node/0.3.6:
@@ -1494,10 +1505,6 @@ packages:
 
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
-    dev: true
-
-  /ms/2.1.3:
-    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
   /nanoid/3.1.30:
