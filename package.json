@@ -6,7 +6,9 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.vue --fix --format stylish",
-    "test": "jest"
+    "test": "jest",
+    "add": "npm i --package-lock-only",
+    "i": "pnpm import && pnpm i"
   },
   "dependencies": {
     "vue": "^3.2.16"
