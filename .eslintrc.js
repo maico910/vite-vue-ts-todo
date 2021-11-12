@@ -11,6 +11,7 @@ module.exports = {
         map: [
           ['@', './src'],
         ],
+        extensions: ['.js', '.ts'],
       },
     },
   },
@@ -24,6 +25,14 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'vue/no-unused-components': 'warn',
     'no-unused-vars': 'off',
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        js: 'never',
+        ts: 'never',
+      },
+    ],
   },
   overrides: [
     {
