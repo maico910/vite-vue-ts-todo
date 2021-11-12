@@ -11,6 +11,7 @@
     "i": "pnpm import && pnpm i"
   },
   "dependencies": {
+    "pinia": "^2.0.3",
     "vue": "^3.2.16"
   },
   "devDependencies": {
